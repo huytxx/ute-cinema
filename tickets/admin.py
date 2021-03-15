@@ -1,4 +1,4 @@
-from tickets.models import Ticket
+from tickets.models import Carausel, Ticket
 from django.contrib import admin
 
 class TicketAdmin(admin.ModelAdmin):
@@ -6,3 +6,4 @@ class TicketAdmin(admin.ModelAdmin):
     search_fields = ('name',)
 
 admin.site.register(Ticket, TicketAdmin)
+admin.site.register(Carausel)
