@@ -1,9 +1,17 @@
 /* Navbar */
 .navbar{
     background-color: antiquewhite;
-    opacity: 0.8;
+    
+    
 }
 .navbar .navbar-collapse{
     justify-content: flex-end;
     font-size: 18px;
+}
+/* slider */
+.carousel{
+
+}
+.d-block{
+    
 }
