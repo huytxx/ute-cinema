@@ -1,0 +1,7 @@
+/* Navbar */
+.navbar{
+    background-color: antiquewhite;
+}
+.navbar .navbar-collapse{
+    justify-content: flex-end;
+}

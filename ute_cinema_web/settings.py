@@ -57,7 +57,7 @@ ROOT_URLCONF = 'ute_cinema_web.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'D:\python\Django\ute_cinema_web\templates'],
+        'DIRS': [r'C:\Users\LENOVO\ute-cinema\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -80,8 +80,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'ute-cinema',
-        'USER': 'Huy',
-        'PASSWORD': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'Just4fun4',
         'HOST': '127.0.0.1',
         'PORT': '5432'
     }
