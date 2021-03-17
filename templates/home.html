@@ -22,29 +22,24 @@
   </head>
 
   <body>
-    <!--Navbar-->
     <nav class="navbar navbar-light navbar-expand-lg bg-nav fixed-top p-3">
-      <a href="#"><img src="{% static 'images/logo2.png' %}" alt="" class="img-fluid" style="width:200px;"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-        <span class="navbar-toggler-icon"></span>
+      <a href="#">
+        <img src="{% static 'images/logo2.png' %}" alt="" class="img-fluid" style="width:200px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"> <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="navbar-collapse collapse " id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto font-weight-bold ">
-            <li class="nav-item ">
-                <a href="#" class="nav-link text-gray-900">Mua vé</a>
-            </li>
-            <li class="nav-item">
-                <a href="customer.html" class="nav-link text-gray-900">Phim</a>
-            </li>
-            <li class="nav-item">
-                <a href="index.html" class="nav-link mr-2 mb-sm-2 mb-2  text-gray-900">Rạp chiếu phim</a>
-            </li>
-            <li class="nav-item">
-                <a href="register.html" class="nav-link  text-gray-900">Khuyến mãi</a>
-            </li>
+          <li class="nav-item "> <a href="#" class="nav-link text-gray-900">Mua vé</a>
+          </li>
+          <li class="nav-item"> <a href="customer.html" class="nav-link text-gray-900">Phim</a>
+          </li>
+          <li class="nav-item"> <a href="index.html" class="nav-link mr-2 mb-sm-2 mb-2  text-gray-900">Rạp chiếu phim</a>
+          </li>
+          <li class="nav-item"> <a href="register.html" class="nav-link  text-gray-900">Khuyến mãi</a>
+          </li>
         </ul>
-    </div>
+      </div>
     </nav>
     <!--Container-->
     <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
@@ -64,28 +59,23 @@
           <img class="d-block w-100" src="{% static 'images/slider-3.jpg' %}" alt="Third slide">
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-      
-      
       <!--CARD-LIST-->
       <div class="card-form">
         <blockquote class="blockquote text-left">
           <p class="mb-0">Phim đang chiếu</p>
         </blockquote>
-        <div class="card-list ">          
+        <div class="card-list ">
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="{% static 'images/card-1.jpg' %}" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Bố già</h5>
-              <p class="card-text">115 Phút</p>              
-              <a href="#" class="btn btn-primary">Đặt vé</a>
+              <p class="card-text">115 Phút</p> <a href="#" class="btn btn-primary">Đặt vé</a>
               <a href="#" class="btn btn-danger">Chi tiết</a>
             </div>
           </div>
@@ -93,8 +83,7 @@
             <img class="card-img-top" src="{% static 'images/card-2.jpg' %}" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Raya</h5>
-              <p class="card-text">114 Phút</p>          
-              <a href="#" class="btn btn-primary">Đặt vé</a>
+              <p class="card-text">114 Phút</p> <a href="#" class="btn btn-primary">Đặt vé</a>
               <a href="#" class="btn btn-danger">Chi tiết</a>
             </div>
           </div>
@@ -102,8 +91,7 @@
             <img class="card-img-top" src="{% static 'images/card-3.jpg' %}" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Tom & Jerry</h5>
-              <p class="card-text">101 Phút</p>             
-              <a href="#" class="btn btn-primary">Đặt vé</a>
+              <p class="card-text">101 Phút</p> <a href="#" class="btn btn-primary">Đặt vé</a>
               <a href="#" class="btn btn-danger">Chi tiết</a>
             </div>
           </div>
@@ -111,64 +99,41 @@
             <img class="card-img-top" src="{% static 'images/card-4.jpg' %}" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Gái già lắm chiêu</h5>
-              <p class="card-text">123 Phút</p>              
-              <a href="#" class="btn btn-primary">Đặt vé</a>
+              <p class="card-text">123 Phút</p> <a href="#" class="btn btn-primary">Đặt vé</a>
               <a href="#" class="btn btn-danger">Chi tiết</a>
             </div>
           </div>
-          
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="{% static 'images/card-6.jpg' %}" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Godzilla</h5>
-              <p class="card-text">120 Phút</p>              
-              <a href="#" class="btn btn-primary">Đặt vé</a>
+              <p class="card-text">120 Phút</p> <a href="#" class="btn btn-primary">Đặt vé</a>
               <a href="#" class="btn btn-danger">Chi tiết</a>
             </div>
           </div>
-          
         </div>
         <blockquote class="blockquote text-left">
           <p class="mb-0">Sky Cinema</p>
         </blockquote>
         <!--Intro-->
         <div class="intro col-md-12 text-justify">
-          <p>
-            <span class="font-weight-bold">
-              Sky Cinema
-            </span>  
-            là công ty tư nhân về điện ảnh được thành lập từ năm 2003, 
-            đã khẳng định thương hiệu là 1 trong 10 địa điểm vui chơi giải trí được yêu thích nhất. Ngoài hệ thống rạp chiếu phim hiện đại, thu hút hàng triệu lượt người đến xem, 
-            <span class="font-weight-bold">
-              Sky Cinema
-            </span>   còn hấp dẫn khán giả bởi không khí thân thiện cũng như chất lượng dịch vụ hàng đầu.
-          </p>
-          <p>
-            Đặt vé tại 
-            <span class="font-weight-bold">
-              Sky Cinema
-            </span>   dễ dàng chỉ sau vài thao tác vô cùng đơn giản. Để mua vé, hãy vào tab Mua vé. Quý khách có thể chọn Mua vé theo phim, theo rạp, theo ngày tùy cách nào tiện lợi nhất cho bản thân.Sau đó, tiến hành mua vé theo các bước hướng dẫn. Chỉ trong vài phút, quý khách sẽ nhận được tin nhắn và email phản hồi Đặt vé thành công của <span class="font-weight-bold">
-              Sky Cinema
-            </span>  . Quý khách có thể dùng tin nhắn lấy vé tại quầy vé của 
-            <span class="font-weight-bold">
-              Sky Cinema
-            </span>   hoặc quét mã QR để một bước vào rạp mà không cần tốn thêm bất kỳ công đoạn nào nữa.
-          </p>
-          <p>
-            Nếu chưa quyết định sẽ xem phim mới nào, hãy tham khảo các bộ phim hay trong mục Phim Đang Chiếu cũng như Phim Sắp Chiếu tại rạp chiếu phim bằng cách vào mục Bình Luận Phim ở Góc Điện Ảnh để đọc những bài bình luận chân thật nhất, tham khảo và cân nhắc. Sau đó, quý khách hãy đặt vé bằng box Mua Vé Nhanh ngay ở đầu trang để chọn được suất chiếu và chỗ ngồi vừa ý nhất.  
-
-
-          </p>
-          <p>
-            Hiện nay, 
-            <span class="font-weight-bold">
-              Sky Cinema
-            </span>   
-            đang ngày càng phát triển hơn nữa với các chương trình đặc sắc, các khuyến mãi hấp dẫn, đem đến cho khán giả những bộ phim bom tấn của thế giới và Việt Nam nhanh chóng và sớm nhất.
-          </p>
-      </div>     
-      
-
+          <p> <span class="font-weight-bold">
+                  Sky Cinema
+                </span> là công ty tư nhân về điện ảnh được thành lập từ năm 2003, đã khẳng định thương hiệu là 1 trong 10 địa điểm vui chơi giải trí được yêu thích nhất. Ngoài hệ thống rạp chiếu phim hiện đại, thu hút hàng triệu lượt người đến xem, <span class="font-weight-bold">
+                  Sky Cinema
+                </span> còn hấp dẫn khán giả bởi không khí thân thiện cũng như chất lượng dịch vụ hàng đầu.</p>
+          <p>Đặt vé tại <span class="font-weight-bold">
+                  Sky Cinema
+                </span> dễ dàng chỉ sau vài thao tác vô cùng đơn giản. Để mua vé, hãy vào tab Mua vé. Quý khách có thể chọn Mua vé theo phim, theo rạp, theo ngày tùy cách nào tiện lợi nhất cho bản thân.Sau đó, tiến hành mua vé theo các bước hướng dẫn. Chỉ trong vài phút, quý khách sẽ nhận được tin nhắn và email phản hồi Đặt vé thành công của <span class="font-weight-bold">
+                  Sky Cinema
+                </span> . Quý khách có thể dùng tin nhắn lấy vé tại quầy vé của <span class="font-weight-bold">
+                  Sky Cinema
+                </span> hoặc quét mã QR để một bước vào rạp mà không cần tốn thêm bất kỳ công đoạn nào nữa.</p>
+          <p>Nếu chưa quyết định sẽ xem phim mới nào, hãy tham khảo các bộ phim hay trong mục Phim Đang Chiếu cũng như Phim Sắp Chiếu tại rạp chiếu phim bằng cách vào mục Bình Luận Phim ở Góc Điện Ảnh để đọc những bài bình luận chân thật nhất, tham khảo và cân nhắc. Sau đó, quý khách hãy đặt vé bằng box Mua Vé Nhanh ngay ở đầu trang để chọn được suất chiếu và chỗ ngồi vừa ý nhất.</p>
+          <p>Hiện nay, <span class="font-weight-bold">
+                  Sky Cinema
+                </span> đang ngày càng phát triển hơn nữa với các chương trình đặc sắc, các khuyến mãi hấp dẫn, đem đến cho khán giả những bộ phim bom tấn của thế giới và Việt Nam nhanh chóng và sớm nhất.</p>
+        </div>
       </div>
     </div>
 
