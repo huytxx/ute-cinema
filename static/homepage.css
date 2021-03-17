@@ -6,7 +6,8 @@ html {
 .navbar{
     background-color:antiquewhite;
     opacity: 0.8;
-    position: relative;
+    position: fixed;
+    
     
 }
 .navbar .navbar-collapse{
