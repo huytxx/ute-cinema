@@ -28,7 +28,7 @@ html {
     width: 100%;
     
 }
-.card-list{
+.card-form .card-list{
     
     display: flex !important;
     color:#43464b;
@@ -44,7 +44,7 @@ html {
     
 }
 .card .card-title{
-    
+    text-align: center  ;
     padding-bottom: 5px;
 }
 .card .card-text{
@@ -56,12 +56,12 @@ html {
     filter: grayscale(10%);
 }
 
-.blockquote{
+.card-form .blockquote{
     text-transform: uppercase;
     padding-top: 15px;  
     margin-left: 15px;
 }
-.blockquote::after{
+.card-form .blockquote::after{
     display: block;
     width: 50px;
     height: 2px;
@@ -70,10 +70,26 @@ html {
     background-color: #f26b38;
    
 }
-.intro{
+.card-form .intro{
     margin-top: 0in;
     margin-right: 0in;
     margin-bottom: 10.0pt;
     margin-left: 0in;
+    
 }
+.col{
+    
+}
+.card-btn-box{
+    display: flex;
+    justify-content:center;
 
+}
+.card-btn-box .btn{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.row .card-text{
+    padding-left: 0;
+    padding-right: 10px;
+}
