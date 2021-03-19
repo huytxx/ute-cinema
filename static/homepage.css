@@ -25,14 +25,15 @@ html {
 
 .card-form{
     position: absolute;
-    width: 100%;
+    width: 90%;
+    left: 5%;
     
 }
 .card-form .card-list{
     
     display: flex !important;
     color:#43464b;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 
     
@@ -40,7 +41,8 @@ html {
 } 
 
 .card{
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    
     
 }
 .card .card-title{
@@ -71,6 +73,7 @@ html {
     margin-top: 8px;
     content: '';
     background-color: #f26b38;
+    
    
 }
 .card-form .intro{
@@ -95,7 +98,7 @@ html {
 .row .card-text{
     padding-left: 0;
     padding-right: 10px;
-    
+   
     
 }
 .row .card-text-1{
