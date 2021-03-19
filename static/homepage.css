@@ -112,3 +112,7 @@ html {
 .dropdown-divider{
     height: 0.5px ;
 }
+.card-header{
+    padding-bottom: 20px;
+    border: none;
+}
