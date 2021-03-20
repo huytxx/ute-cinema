@@ -4,7 +4,7 @@ html {
     font-size: 1rem;
 }
 .navbar{
-    background-color: antiquewhite;
+    background-color:lightyellow;
     opacity: 1;
     position: relative;
     
@@ -42,7 +42,8 @@ html {
 
 .card{
     margin-bottom: 30px;
-    
+    transition: 0.5s ease-in-out;
+
     
 }
 .card .card-title{
@@ -56,10 +57,7 @@ html {
     font-size: 14px;
     text-transform: uppercase;
     }   
-.card-img-top:hover{
-    opacity: 0.7;
-    filter: grayscale(10%);
-}
+
 
 .card-form .blockquote{
     text-transform: uppercase;
@@ -87,12 +85,30 @@ html {
 .card-btn-box{
     display: flex;
     justify-content:center;
+    position: absolute;
+    flex-direction: column;
+    bottom: 57%;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    width: 80%;
+    left:10%;
+    transition: 0.4s ease-in-out;
 
+}
+.card-btn-box:hover{
+    opacity: 1;
 }
 .card-btn-box .btn{
     margin-left: 3px;
     margin-right: 3px;
     border: 0.2px solid antiquewhite;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
     
 }
 .row .card-text{
@@ -115,4 +131,27 @@ html {
 .card-header{
     padding-bottom: 20px;
     border: none;
+}
+.card:hover{
+    transform: translateY(20px);
+}
+.card-btn-box .btn:hover{
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+
+}
+.card:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    display: block; width: 100%;
+    height: 75%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.6))
+    ;
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.card:hover:before{
+    opacity: 1;
 }
