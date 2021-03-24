@@ -2,6 +2,7 @@
 /* Navbar */
 html {
     font-size: 1rem;
+
 }
 .navbar{
     background-color:lightyellow;
@@ -22,11 +23,10 @@ html {
     
     
 }
-
+/* Card */  
 .card-form{
     position: absolute;
-    width: 90%;
-    left: 5%;
+
     
 }
 .card-form .card-list{
@@ -35,7 +35,7 @@ html {
     color:#43464b;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
+    margin: 2% 4% 0% 4%;
     
     
 } 
@@ -43,26 +43,37 @@ html {
 .card{
     margin-bottom: 30px;
     transition: 0.5s ease-in-out;
-
     
+
 }
+
 .card .card-title{
     text-align: center  ;
     padding-bottom: 5px;
     
     border-radius: 5px;
     padding-top: 2px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
 }
-.card .card-text{
-    font-size: 14px;
+.card .card-text-1,.card-text-2{
+    font-size: 16px;
     text-transform: uppercase;
-    }   
+    font-weight: 400;
+    
+
+}   
 
 
 .card-form .blockquote{
     text-transform: uppercase;
     padding-top: 15px;  
-    margin-left: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+
+
+    
 }
 .card-form .blockquote::after{
     display: block;
@@ -74,12 +85,18 @@ html {
     
    
 }
-.card-form .intro{
-    margin-top: 0in;
-    margin-right: 0in;
-    margin-bottom: 10.0pt;
-    margin-left: 0in;
+.card-form-header{
+    margin-left: 5.5%;
+    margin-top: 1%;
     
+
+
+}
+.intro{
+    padding-left:5% !important;
+    padding-right: 5% !important;
+    font-family: 'Rancher', sans-serif;
+    font-weight: 400;
 }
 
 .card-btn-box{
@@ -132,12 +149,9 @@ html {
 .dropdown-divider{
     height: 0.5px ;
 }
-.card-header{
-    padding-bottom: 20px;
-    border: none;
-}
+
 .card:hover{
-    transform: translateY(20px);
+    transform: translateY(20px)
 }
 .card-btn-box .btn:hover{
     box-shadow: inset 230px 0 0 0 #f26b38;
@@ -151,7 +165,7 @@ html {
     left:0;
     display: block; width: 100%;
     height: 75%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.5),rgba(0,0,0,0.7))
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7),rgba(0,0,0,0.7))
     ;
     z-index: 2;
     transition: 0.5s all;
@@ -159,4 +173,12 @@ html {
 }
 .card:hover:before{
     opacity: 1;
+}
+/* footer */
+.homepage-footer{
+    height: 400px;
+    background-color: #43464b;
+    width: 100%;
+    display: absolute;
+    margin-top: 50px;
 }
