@@ -107,8 +107,8 @@ html {
     bottom: 56%;
     z-index: 3;
     color: #fff;
-    opacity: 1;
-    transform: translateY(-30px);
+    opacity: 0;
+    transform: translateY(60px);
     transition: 0.5s all;
     width: 80%;
     left:10%;
@@ -117,6 +117,7 @@ html {
 }
 .card-btn-box:hover{
     opacity: 1;
+    transform: translateY(10px);
 }
 .card-btn-box .btn{
     margin-left: 3px;
