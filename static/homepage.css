@@ -107,8 +107,8 @@ html {
     bottom: 56%;
     z-index: 3;
     color: #fff;
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 1;
+    transform: translateY(-30px);
     transition: 0.5s all;
     width: 80%;
     left:10%;
