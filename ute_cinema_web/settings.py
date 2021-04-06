@@ -59,6 +59,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [r'C:\Users\LENOVO\ute-cinema\templates'],
+        #'DIRS': [r'D:\python\Django\ute_cinema_web\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -85,6 +86,11 @@ DATABASES = {
         'PASSWORD': 'Just4fun4',
         'HOST': '127.0.0.1',
         'PORT': '5432'
+        # 'NAME': 'ute-cinema',
+        # 'USER': 'Huy',
+        # 'PASSWORD': 'postgres',
+        # 'HOST': '127.0.0.1',
+        # 'PORT': '5432'
     }
 }
 
