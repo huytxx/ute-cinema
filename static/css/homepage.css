@@ -7,7 +7,8 @@ html {
 .navbar{
     background-color:lightyellow;
     opacity: 1;
-    position: relative;
+    position:relative;
+    opacity: 0.8;
     
 
 }
@@ -101,6 +102,7 @@ html {
     padding-right: 5% !important;
     font-family: 'Rancher', sans-serif;
     font-weight: 400;
+    
 }
 
 .card-btn-box{

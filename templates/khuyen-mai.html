@@ -10,80 +10,9 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/static/homepage.css">
+    <link rel="stylesheet" href="/static/css/homepage.css">
     <title>Ute Cinema</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Ranchers&family=Roboto:wght@300&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .main {
-            height: 1000px;
-        }
-
-        .slide {
-            margin-bottom: 50px;
-        }
-
-        .slide .header-slide {
-            margin-bottom: 10px;
-        }
-
-        .slide .header-text h3 {
-            padding-left: 10px;
-        }
-
-
-
-        .more-btn a {
-            text-decoration: none;
-            color: #333;
-            text-transform: uppercase;
-            position: absolute;
-            margin-top: 5px;
-        }
-
-        .more-btn :hover {
-            background-color: red;
-        }
-
-        .more-btn a img {
-            vertical-align: -.120em;
-        }
-
-        .item-wrap {
-            margin: 30px 35px 0 35px;
-            border: 1px solid rgb(199, 199, 199);
-            width: 260px;
-            height: 280px;
-            padding: 0;
-
-        }
-
-        /* .item-wrap .text{
-    text-align: center;
-    padding: 0 47px;
-    padding-top: 12px; 
-} */
-
-        .item-wrap .text {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            margin: 0;
-            padding-top: 10px;
-        }
-
-        .img-slide {
-            width: 100%;
-            height: 230px;
-            object-fit: cover;
-        }
-    </style>
+    <link rel="stylesheet" href="/static/css/khuyen-mai.css">
 
 </head>
 
@@ -132,90 +61,90 @@
 			<span class="sr-only">Next</span>
 		</a>
     
-    <!--Container-->
-    <div class="main container-fluid mt-4">
-        <div class="row slide">
-            <div class="row header-slide">    <!-- start header slide-->
-                <div class="col-lg-11 header-text">
-                    <h3>Promotion</h3>
-                </div>
-                <div class="col-lg-1 more-btn">
-                    <a href="">
-                        more
-                        <img src="./fonts/bootstrap-icons-1.4.1/arrow-right-circle-fill.svg" alt="">
-                    </a>
-                </div>
-            </div>    <!-- end header slide -->
 
-            <div class="row item-slide">  <!-- star item slide -->
-                {% for item in promotion %}
-                <div class="col-lg-3 item-wrap">
-                    <div class="row image">
-                        <img class="img-slide" src="{{item.image.url}}" alt="">
+        <!--Container-->
+        <div class="main container-fluid mt-4">
+            <div class="row slide">
+                <div class="row header-slide">    <!-- start header slide-->
+                    <div class="col-lg-11 header-text">
+                        <h3>Promotion</h3>
                     </div>
-                    <div class="row text">
-                        {{item.start_time}} - {{item.end_time}}
+                    <div class="col-lg-1 more-btn">
+                        <a href="">
+                            more
+                            <img src="./fonts/bootstrap-icons-1.4.1/arrow-right-circle-fill.svg" alt="">
+                        </a>
                     </div>
-                </div>
-			    {% endfor %}
-            </div>  
-        </div><!-- end slide -->
+                </div>    <!-- end header slide -->
 
-        <div class="row slide">     <!-- star header slide -->
-            <div class="row header-slide">
-                <div class="col-lg-11 header-text">
-                    <h3>Phim</h3>
-                </div>
-                <div class="col-lg-1 more-btn">
-                    <a href="">
-                        more
-                        <img src="./fonts/bootstrap-icons-1.4.1/arrow-right-circle-fill.svg" alt="">
-                    </a>
-                </div>
-            </div>  <!-- end header slide -->
-            
-            <div class="row item">  <!-- star item -->
-                {% for item in phim %}
-                <div class="col-lg-3 item-wrap">
-                    <div class="row image">
-                        <img class="img-slide" src="{{item.image.url}}" alt="">
+                <div class="row item-slide">  <!-- star item slide -->
+                    {% for item in promotion %}
+                    <div class="col-lg-3 item-wrap">
+                        <div class="row image">
+                            <img class="img-slide" src="{{item.image.url}}" alt="">
+                        </div>
+                        <div class="row text">
+                            {{item.start_time}} - {{item.end_time}}
+                        </div>
                     </div>
-                    <div class="row text">
-                        {{item.start_time}} - {{item.end_time}}
+                    {% endfor %}
+                </div>  
+            </div><!-- end slide -->
+
+            <div class="row slide">     <!-- star header slide -->
+                <div class="row header-slide">
+                    <div class="col-lg-11 header-text">
+                        <h3>Phim</h3>
                     </div>
-                </div>
-			    {% endfor %}
-            </div>  <!-- end item -->
+                    <div class="col-lg-1 more-btn">
+                        <a href="">
+                            more
+                            <img src="./fonts/bootstrap-icons-1.4.1/arrow-right-circle-fill.svg" alt="">
+                        </a>
+                    </div>
+                </div>  <!-- end header slide -->
+                
+                <div class="row item">  <!-- star item -->
+                    {% for item in phim %}
+                    <div class="col-lg-3 item-wrap">
+                        <div class="row image">
+                            <img class="img-slide" src="{{item.image.url}}" alt="">
+                        </div>
+                        <div class="row text">
+                            {{item.start_time}} - {{item.end_time}}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>  <!-- end item -->
+            </div>
+            <div class="row slide">
+                <div class="row header-slide">    <!-- start header slide-->
+                    <div class="col-lg-11 header-text">
+                        <h3>Đối tác</h3>
+                    </div>
+                    <div class="col-lg-1 more-btn">
+                        <a href="">
+                            more
+                            <img src="./fonts/bootstrap-icons-1.4.1/arrow-right-circle-fill.svg" alt="">
+                        </a>
+                    </div>
+                </div>    <!-- end header slide-->
+
+                <div class="row item">  <!-- star slide -->
+                
+                    {% for item in doi_tac %}
+                    <div class="col-lg-3 item-wrap">
+                        <div class="row image">
+                            <img class="img-slide" src="{{item.image.url}}" alt="">
+                        </div>
+                        <div class="row text">
+                            {{item.title}} - {{item.title}}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>  
+            </div>
         </div>
-        <div class="row slide">
-            <div class="row header-slide">    <!-- start header slide-->
-                <div class="col-lg-11 header-text">
-                    <h3>Đối tác</h3>
-                </div>
-                <div class="col-lg-1 more-btn">
-                    <a href="">
-                        more
-                        <img src="./fonts/bootstrap-icons-1.4.1/arrow-right-circle-fill.svg" alt="">
-                    </a>
-                </div>
-            </div>    <!-- end header slide-->
-
-            <div class="row item">  <!-- star slide -->
-               
-                {% for item in doi_tac %}
-                <div class="col-lg-3 item-wrap">
-                    <div class="row image">
-                        <img class="img-slide" src="{{item.image.url}}" alt="">
-                    </div>
-                    <div class="row text">
-                        {{item.title}} - {{item.title}}
-                    </div>
-                </div>
-			    {% endfor %}
-            </div>  
-        </div>
-    </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
