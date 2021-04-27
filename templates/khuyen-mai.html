@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/homepage.css">
+    <title>Ute Cinema</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Ranchers&family=Roboto:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            height: 1000px;
+        }
+
+        .slide {
+            margin-bottom: 50px;
+        }
+
+        .slide .header-slide {
+            margin-bottom: 10px;
+        }
+
+        .slide .header-text h3 {
+            padding-left: 10px;
+        }
+
+
+
+        .more-btn a {
+            text-decoration: none;
+            color: #333;
+            text-transform: uppercase;
+            position: absolute;
+            margin-top: 5px;
+        }
+
+        .more-btn :hover {
+            background-color: red;
+        }
+
+        .more-btn a img {
+            vertical-align: -.120em;
+        }
+
+        .item-wrap {
+            margin: 30px 35px 0 35px;
+            border: 1px solid rgb(199, 199, 199);
+            width: 260px;
+            height: 280px;
+            padding: 0;
+
+        }
+
+        /* .item-wrap .text{
+    text-align: center;
+    padding: 0 47px;
+    padding-top: 12px; 
+} */
+
+        .item-wrap .text {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding-top: 10px;
+        }
+
+        .img-slide {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-nav fixed-top p-3">
+        <a href="">
+            <img src="{% static 'images/logo2.png' %}" alt="" class="img-fluid" style="width:200px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"> <span
+                class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto font-weight-bold ">
+                <li class="nav-item "> <a href="#" class="nav-link text-gray-900">Mua vé</a>
+                </li>
+                <li class="nav-item"> <a href="/" class="nav-link text-gray-900">Phim</a>
+                </li>
+                <li class="nav-item"> <a href="" class="nav-link mr-2 mb-sm-2 mb-2  text-gray-900">Rạp chiếu
+                        phim</a>
+                </li>
+                <li class="nav-item"> <a href="khuyen-mai" class="nav-link  text-gray-900">Khuyến mãi</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			{% for item in carousel %}
+			<div class="carousel-item {% if forloop.counter0 == 0%} active {% endif %}">
+				<img src="{{item.image.url}}" class="d-block w-100" alt="">
+			</div>
+			{% endfor %}
+
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> <span
+				class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> <span
+				class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+    
+    <!--Container-->
+    <div class="main container-fluid mt-4">
+        <div class="row slide">
+            <div class="row header-slide">    <!-- start header slide-->
+                <div class="col-lg-11 header-text">
+                    <h3>Promotion</h3>
+                </div>
+                <div class="col-lg-1 more-btn">
+                    <a href="">
+                        more
+                        <img src="./fonts/bootstrap-icons-1.4.1/arrow-right-circle-fill.svg" alt="">
+                    </a>
+                </div>
+            </div>    <!-- end header slide -->
+
+            <div class="row item-slide">  <!-- star item slide -->
+                {% for item in promotion %}
+                <div class="col-lg-3 item-wrap">
+                    <div class="row image">
+                        <img class="img-slide" src="{{item.image.url}}" alt="">
+                    </div>
+                    <div class="row text">
+                        {{item.start_time}} - {{item.end_time}}
+                    </div>
+                </div>
+			    {% endfor %}
+            </div>  
+        </div><!-- end slide -->
+
+        <div class="row slide">     <!-- star header slide -->
+            <div class="row header-slide">
+                <div class="col-lg-11 header-text">
+                    <h3>Phim</h3>
+                </div>
+                <div class="col-lg-1 more-btn">
+                    <a href="">
+                        more
+                        <img src="./fonts/bootstrap-icons-1.4.1/arrow-right-circle-fill.svg" alt="">
+                    </a>
+                </div>
+            </div>  <!-- end header slide -->
+            
+            <div class="row item">  <!-- star item -->
+                {% for item in phim %}
+                <div class="col-lg-3 item-wrap">
+                    <div class="row image">
+                        <img class="img-slide" src="{{item.image.url}}" alt="">
+                    </div>
+                    <div class="row text">
+                        {{item.start_time}} - {{item.end_time}}
+                    </div>
+                </div>
+			    {% endfor %}
+            </div>  <!-- end item -->
+        </div>
+        <div class="row slide">
+            <div class="row header-slide">    <!-- start header slide-->
+                <div class="col-lg-11 header-text">
+                    <h3>Đối tác</h3>
+                </div>
+                <div class="col-lg-1 more-btn">
+                    <a href="">
+                        more
+                        <img src="./fonts/bootstrap-icons-1.4.1/arrow-right-circle-fill.svg" alt="">
+                    </a>
+                </div>
+            </div>    <!-- end header slide-->
+
+            <div class="row item">  <!-- star slide -->
+               
+                {% for item in doi_tac %}
+                <div class="col-lg-3 item-wrap">
+                    <div class="row image">
+                        <img class="img-slide" src="{{item.image.url}}" alt="">
+                    </div>
+                    <div class="row text">
+                        {{item.title}} - {{item.title}}
+                    </div>
+                </div>
+			    {% endfor %}
+            </div>  
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

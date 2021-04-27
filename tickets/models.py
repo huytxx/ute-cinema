@@ -19,4 +19,20 @@ class Carausel(models.Model):
 
     def __str__(self):
         return self.title
+
+
+TYPE_CHOICES = {
+    ('promotion','Promotion'),
+    ('phim','Phim'),
+    ('doi_tac','Đối tác'),
+}
+class Promotion(models.Model):
+    title = models.CharField(max_length=150)
+    image = models.ImageField(upload_to='course_picture')
+    start_time = models.CharField(max_length=50)
+    end_time = models.CharField(max_length=50)
+    type = models.CharField(max_length=90, choices=TYPE_CHOICES, default='promotion')
+
+    def __str__(self):
+        return self.title
     

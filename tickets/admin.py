@@ -1,4 +1,4 @@
-from tickets.models import Carausel, Ticket
+from tickets.models import Carausel, Promotion, Ticket
 from django.contrib import admin
 
 class TicketAdmin(admin.ModelAdmin):
@@ -7,3 +7,4 @@ class TicketAdmin(admin.ModelAdmin):
 
 admin.site.register(Ticket, TicketAdmin)
 admin.site.register(Carausel)
+admin.site.register(Promotion)

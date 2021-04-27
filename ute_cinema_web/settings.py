@@ -59,7 +59,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [r'C:\Users\LENOVO\ute-cinema\templates'],
-        #'DIRS': [r'D:\python\Django\ute_cinema_web\templates'],
+        # 'DIRS': [r'D:\python\Django\ute_cinema_web\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
