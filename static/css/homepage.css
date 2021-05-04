@@ -5,7 +5,7 @@ html {
 
 }
 .navbar{
-    background-color:lightyellow;
+    background-color:wheat;
     opacity: 1;
     position:relative;
     opacity: 0.8;
@@ -195,7 +195,7 @@ html {
     background-color: #484747;
     width: 100%;
     display: absolute;
-    margin-top: 50px;
+    margin-top: 26%;
 }
 .info-container{
     padding-left: 15px;
@@ -241,3 +241,8 @@ html {
     line-height: 40px;
 }
 
+.promo{
+    margin-top: 1600px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
