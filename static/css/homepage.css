@@ -195,7 +195,7 @@ html {
     background-color: #484747;
     width: 100%;
     display: absolute;
-    margin-top: 26%;
+    margin-top: 2%;
 }
 .info-container{
     padding-left: 15px;
@@ -242,7 +242,15 @@ html {
 }
 
 .promo{
-    margin-top: 1600px;
     margin-left: 5%;
     margin-right: 5%;
+    max-width: 90%;
+    position: absolute;
+    
+}
+.promo-form{
+    position: relative;
+}
+.film-header{
+    margin-top: 300px;
 }
