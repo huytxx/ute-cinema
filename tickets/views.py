@@ -30,3 +30,9 @@ def promotion_view(request):
         'phim': phim,
         'doi_tac': doi_tac
     })
+
+def chi_tiet_view(request):
+    carousel = Carausel.objects.all()
+    return render(request, 'chi-tiet.html', {
+        'carousel': carousel
+    })
