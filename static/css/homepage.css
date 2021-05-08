@@ -5,12 +5,9 @@ html {
 
 }
 .navbar{
-    background-color:wheat;
-    opacity: 1;
+    background:linear-gradient(to left, antiquewhite,palegoldenrod,aliceblue);
     position:relative;
     opacity: 0.8;
-    
-
 }
 .navbar .navbar-collapse{
     justify-content: flex-end;
@@ -27,7 +24,6 @@ html {
 /* Card */  
 .card-form{
     position: absolute;
-
     
 }
 .card{
@@ -253,4 +249,8 @@ html {
 }
 .film-header{
     margin-top: 300px;
+}
+.promo .item:hover{
+    opacity: 0.6;
+
 }
