@@ -8,9 +8,13 @@ from tickets.models import Carausel, Promotion, Ticket
 def home_view(request):
     carousel = Carausel.objects.all()
     card = Ticket.objects.all()
+    promotion = Promotion.objects.filter(
+        type = 'promotion'
+    )
     return render(request, 'home.html', {
         'carousel': carousel,
-        'card': card
+        'card': card,
+        'promotion': promotion
     })
 
 def promotion_view(request):

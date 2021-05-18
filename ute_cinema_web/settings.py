@@ -59,7 +59,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [r'C:\Users\LENOVO\ute-cinema\templates'],
-        # 'DIRS': [r'D:\python\Django\ute_cinema_web\templates'],
+         #'DIRS': [r'D:\python\Django\ute_cinema_web\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'ute_cinema_web.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'ute-cinema',
         'USER': 'postgres',
         'PASSWORD': 'Just4fun4',
