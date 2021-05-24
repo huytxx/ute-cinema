@@ -16,7 +16,7 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose ports
-EXPOSE 8000
+EXPOSE 3000
 
 # default command to execute    
-CMD exec gunicorn djangoapp.wsgi:application --bind 0.0.0.0:8000 --workers 3 
+CMD exec gunicorn djangoapp.wsgi:application --bind 0.0.0.0:3000 --workers 3 
