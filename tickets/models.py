@@ -7,13 +7,13 @@ class Ticket(models.Model):
     description = models.TextField()
     type = models.CharField(max_length=1000)
     fit_for = models.CharField(max_length=100)
-    image = models.ImageField(upload_to='course_picture')
+    image = models.ImageField(upload_to='picture')
 
     def __str__(self):
         return self.name
 
 class Carausel(models.Model):
-    image = models.ImageField(upload_to='course_picture')
+    image = models.ImageField(upload_to='picture')
     title = models.CharField(max_length=150)
     sub_title = models.CharField(max_length=100)
 

@@ -26,6 +26,7 @@
 </head>
 
 <body>
+	<!-- Phần menu cho trang chủ -->
 	<nav class="navbar navbar-light navbar-expand-lg bg-nav fixed-top p-3">
 		<a href="">
 			<img src="{% static 'images/logo2.png' %}" alt="" class="img-fluid" style="width:200px;">
@@ -47,6 +48,8 @@
 			</ul>
 		</div>
 	</nav>
+	<!-- Kết thúc phần menu cho trang chủ -->
+	<!-- Slider cho trang chủ -->
 	<!--Container-->
 	<div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
 		<ol class="carousel-indicators">
@@ -70,7 +73,9 @@
 				class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		</a>
+		<!--Kết thúc Slider cho trang chủ  -->
 
+		<!-- Phần các vé khuyến mãi  -->
 		<!--CARD-LIST-->
 		<div class="card-form">
 			<div class="promo-form">
@@ -91,6 +96,8 @@
 				</div>
 				
 			</div>
+			<!-- Kết thúc phần khuyến mãi -->
+			<!-- Phần các vé xem phim tại rạp đang chiếu -->
 			<blockquote class="blockquote card-form-header text-left film-header">
 				<p class="mb-0">Phim đang chiếu </p>
 			</blockquote>
@@ -144,8 +151,7 @@
 						</div>
 					</div>
 				</div>
-
-				<!-- Button trigger modal -->
+				<!-- Kết thúc phần vé xem phim -->
 
 				<!-- Modal -->
 				<div class="modal fade" id="{{item.image.url}}" tabindex="-1" role="dialog"
