@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+	<!-- khai báo để sử dụng những file static -->
 	{% load static %}
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -58,6 +59,7 @@
 			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 		</ol>
 		<div class="carousel-inner">
+			<!-- list ra tất cả các item carousel -->
 			{% for item in carousel %}
 			<div class="carousel-item {% if forloop.counter0 == 0%} active {% endif %}">
 				<img src="{{item.image.url}}" class="d-block w-100" alt="">

@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
-
-class CoursesConfig(AppConfig):
+# tạo lớp đại diện cho app
+class TicketsConfig(AppConfig):
     name = 'tickets'

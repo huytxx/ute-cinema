@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    'tickets.apps.CoursesConfig'
+    #khai báo app của mình
+    'tickets.apps.TicketsConfig'
 ]
 
 MIDDLEWARE = [
@@ -60,7 +60,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         #'DIRS': [r'C:\Users\LENOVO\ute-cinema\templates'],
         #'DIRS': [r'/usr/src/app/ute_cinema_web/templates'],
-        'DIRS': [r'D:\python\Django\ute_cinema_web\templates'],
+        #'DIRS': [r'D:\python\Django\ute_cinema_web\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -87,10 +87,11 @@ DATABASES = {
         # 'PASSWORD': 'Just4fun4',
         # 'HOST': '127.0.0.1',
         # 'PORT': '5432'
-        'NAME': 'ute-cinema',
-        'USER': 'Huy',
-        'PASSWORD': 'postgres',
-        'HOST': '127.0.0.1',
+        # để thầy dễ theo dõi về dữ liệu thì em dùng 1 cái vps của google để sử dụng
+        'NAME': 'ute_cinema',
+        'USER': 'postgres',
+        'PASSWORD': 'Th@ngcut3',
+        'HOST': '34.87.175.111',
         'PORT': '5432'
     }
 }
@@ -132,10 +133,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+# cài đặt đường dẫn cho những file static
 STATIC_URL = '/static/'
-MEDIA_URL = '/course_picture/'
+MEDIA_URL = '/picture/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'course_picture')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'picture')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 VENV_PATH = os.path.dirname(BASE_DIR)
 STATIC_ROOT = os.path.join(VENV_PATH, 'static_root')

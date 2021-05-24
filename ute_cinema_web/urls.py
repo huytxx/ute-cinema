@@ -4,6 +4,7 @@ from tickets import views
 from django.conf import settings
 from django.conf.urls.static import static
 
+# Khai báo đường dẫn đến các trang
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('khuyen-mai', views.promotion_view),
