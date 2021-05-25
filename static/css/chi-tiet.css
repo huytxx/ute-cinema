@@ -8,6 +8,8 @@ body{
 }
 .wide_inner{
     height: 1000px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .wide_top{
     margin-top: 20px;
