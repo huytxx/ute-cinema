@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- khai báo để sử dụng những file static -->
     {% load static %}
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,6 +26,7 @@
 <body>
     <nav class="navbar navbar-light navbar-expand-lg bg-nav fixed-top p-3">
         <a href="/">
+            <!-- load ảnh từ file static -->
             <img src="{% static 'images/logo2.png' %}" alt="" class="img-fluid" style="width:200px;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"> <span

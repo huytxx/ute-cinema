@@ -30,6 +30,7 @@
 	<!-- Phần menu cho trang chủ -->
 	<nav class="navbar navbar-light navbar-expand-lg bg-nav fixed-top p-3">
 		<a href="">
+			<!-- load ảnh từ file static/images -->
 			<img src="{% static 'images/logo2.png' %}" alt="" class="img-fluid" style="width:200px;">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"> <span
@@ -87,6 +88,7 @@
 				
 				<div class="promo">
 					<div class="owl-carousel owl-theme">
+						<!-- list ra tất cả các vé khuyến mãi -->
 						{% for item in promotion %}
 						<div class="item">
 							<a href="khuyen-mai">
@@ -104,6 +106,7 @@
 				<p class="mb-0">Phim đang chiếu </p>
 			</blockquote>
 			<div class="card-list ">
+				<!-- list ra tất cả các vé xem phim hiện có trong db -->
 				{% for item in card %}
 				<div class="card" style="width: 18rem;">
 					<img class="card-img-top" src="{{item.image.url}}" alt="Card image cap">
@@ -122,13 +125,13 @@
 										 <span >9.6</span>
 								 </div>
 								 <dl class="info_spec" >
-									 <dt>Xếp hạng</dt>
+									 <dt>Lứa tuổi phù hợp</dt>
 									 <dd >{{item.fit_for}} trở lên</dd>
 									 <dt>Ngày phát hành</dt>
 									 <dd >{{item.release_time}}</dd>
 								 </dl>
 								 <dl class="info_spec" >
-									 <dt>Thông tin cơ bản</dt>
+									 <dt>Thời gian chiếu</dt>
 									 <dd >{{item.time}}</dd>
 								 </dl>
 								 <dl class="info_spec" >
@@ -156,6 +159,7 @@
 				<!-- Kết thúc phần vé xem phim -->
 
 				<!-- Modal -->
+				<!-- modal hiển thị để người dùng có thể đặt vé -->
 				<div class="modal fade" id="{{item.image.url}}" tabindex="-1" role="dialog"
 					aria-labelledby="{{item.image.url}}Label" aria-hidden="true">
 					<div class="modal-dialog modal-lg" role="document">
