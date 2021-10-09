@@ -82,17 +82,12 @@ WSGI_APPLICATION = 'ute_cinema_web.wsgi.application'
 DATABASES = {
     'default': {
          'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME': 'ute-cinema',
-        # 'USER': 'postgres',
-        # 'PASSWORD': 'Just4fun4',
-        # 'HOST': '127.0.0.1',
-        # 'PORT': '5432'
-        # để thầy dễ theo dõi về dữ liệu thì em dùng 1 cái vps của google để sử dụng
-        'NAME': 'ute_cinema',
+        'NAME': 'ute-cinema',
         'USER': 'postgres',
-        'PASSWORD': 'Th@ngcut3',
-        'HOST': '34.87.175.111',
+        'PASSWORD': 'Just4fun4',
+        'HOST': '127.0.0.1',
         'PORT': '5432'
+
     }
 }
 
